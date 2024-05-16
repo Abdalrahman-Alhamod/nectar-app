@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:nectar_app/src/Find_Products/domain/entities/category_entity.dart';
 
 class CategoryCard extends StatelessWidget {
   const CategoryCard({
     super.key,
     required this.backgroundColor,
     required this.borderColor,
-    required this.title,
-    required this.image,
-    required this.onPressed,
+    required this.onPressed, required this.category,
   });
   final Color backgroundColor;
   final Color borderColor;
-  final String title;
-  final String image;
+  final CategoryEntity category;
   final void Function() onPressed;
   @override
   Widget build(BuildContext context) {
@@ -39,14 +37,14 @@ class CategoryCard extends StatelessWidget {
               flex: 1,
             ),
             Image.asset(
-              image,
+              category.image,
               width: 100,
             ),
             const Spacer(
               flex: 2,
             ),
             Text(
-              title,
+              category.title,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.inverseSurface,

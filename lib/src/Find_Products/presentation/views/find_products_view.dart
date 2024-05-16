@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nectar_app/src/Find_Products/domain/entities/category_entity.dart';
 
 import '../../../../core/assets/app_images.dart';
 import '../../../../core/themes/app_colors.dart';
@@ -32,57 +33,73 @@ class FindProductsView extends StatelessWidget {
             CategoryCard(
               backgroundColor: AppColors.lightGreen,
               borderColor: AppColors.lightGreenBorder,
-              title: 'Frash Fruits & Vegetable',
-              image: AppImages.freshFruits,
+              category: CategoryEntity(
+                title: 'Fresh Fruits & Vegetable',
+                image: AppImages.freshFruits,
+              ),
               onPressed: () {},
             ),
             CategoryCard(
               backgroundColor: AppColors.lightOrange,
               borderColor: AppColors.lightOrangeBorder,
-              title: 'Cooking Oil & Ghee',
-              image: AppImages.cooking,
+              category: CategoryEntity(
+                title: 'Cooking Oil & Ghee',
+                image: AppImages.cooking,
+              ),
               onPressed: () {},
             ),
             CategoryCard(
               backgroundColor: AppColors.lightRed,
               borderColor: AppColors.lightRedBorder,
-              title: 'Meat & Fish',
-              image: AppImages.meetFish,
+              category: CategoryEntity(
+                title: 'Meat & Fish',
+                image: AppImages.meetFish,
+              ),
               onPressed: () {},
             ),
             CategoryCard(
               backgroundColor: AppColors.lightPurple,
               borderColor: AppColors.lightPurpleBorder,
-              title: 'Bakery & Snacks',
-              image: AppImages.bakerySnacks,
+              category: CategoryEntity(
+                title: 'Bakery & Snacks',
+                image: AppImages.bakerySnacks,
+              ),
               onPressed: () {},
             ),
             CategoryCard(
               backgroundColor: AppColors.lightYellow,
               borderColor: AppColors.lightYellowBorder,
-              title: 'Dairy & Eggs',
-              image: AppImages.dairyEggs,
+              category: CategoryEntity(
+                title: 'Dairy & Eggs',
+                image: AppImages.dairyEggs,
+              ),
               onPressed: () {},
             ),
             CategoryCard(
               backgroundColor: AppColors.lightGreen2,
               borderColor: AppColors.lightGreen2Border,
-              title: 'Beverages',
-              image: AppImages.beverages,
+              category: CategoryEntity(
+                title: 'Beverages',
+                image: AppImages.beverages,
+              ),
               onPressed: () {},
             ),
             CategoryCard(
               backgroundColor: AppColors.lightPurple2,
               borderColor: AppColors.lightPurple2Border,
-              title: 'Frash Fruits & Vegetable',
-              image: AppImages.freshFruits,
+              category: CategoryEntity(
+                title: 'Frash Fruits & Vegetable',
+                image: AppImages.freshFruits,
+              ),
               onPressed: () {},
             ),
             CategoryCard(
               backgroundColor: AppColors.lightRed2,
               borderColor: AppColors.lightRed2Border,
-              title: 'Frash Fruits & Vegetable',
-              image: AppImages.freshFruits,
+              category: CategoryEntity(
+                title: 'Frash Fruits & Vegetable',
+                image: AppImages.freshFruits,
+              ),
               onPressed: () {},
             ),
           ],
