@@ -5,8 +5,8 @@ import 'app_colors.dart';
 
 ThemeData getLightThemeData(BuildContext context) {
   final ColorScheme colorScheme = const ColorScheme.light().copyWith(
-    primary: AppColors.primaryColor,
-    secondary: AppColors.primaryColor.withAlpha(230),
+    primary: AppColors.primary,
+    secondary: AppColors.primary.withAlpha(230),
     background: Colors.white,
   );
   return ThemeData(

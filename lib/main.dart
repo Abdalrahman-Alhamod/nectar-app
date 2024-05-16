@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nectar_app/src/Home/presentation/views/home_view.dart';
 
 import 'core/themes/light_theme.dart';
-import 'src/Find_Products/presentation/views/find_products_view.dart';
 
 void main() {
   runApp(const NectarApp());
@@ -15,7 +15,7 @@ class NectarApp extends StatelessWidget {
     return MaterialApp(
       theme: getLightThemeData(context),
       debugShowCheckedModeBanner: false,
-      home: const FindProductsView(),
+      home: const HomeView(),
     );
   }
 }
