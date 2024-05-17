@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:nectar_app/core/utils/app_route.dart';
 import 'package:nectar_app/src/Find_Products/domain/entities/category_entity.dart';
 
 import '../../../../core/assets/app_images.dart';
@@ -87,7 +89,9 @@ class FindProductsView extends StatelessWidget {
                         title: 'Beverages',
                         image: AppImages.beverages,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        GoRouter.of(context).push(AppRoute.kBeveragesView);
+                      },
                     ),
                     CategoryCard(
                       backgroundColor: AppColors.lightPurple2,

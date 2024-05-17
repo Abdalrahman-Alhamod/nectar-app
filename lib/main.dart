@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nectar_app/src/Home/presentation/views/home_view.dart';
+import 'package:nectar_app/core/utils/app_route.dart';
 
 import 'core/themes/light_theme.dart';
 
@@ -12,10 +12,11 @@ class NectarApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRoute.router,
       theme: getLightThemeData(context),
       debugShowCheckedModeBanner: false,
-      home: const HomeView(),
+     
     );
   }
 }

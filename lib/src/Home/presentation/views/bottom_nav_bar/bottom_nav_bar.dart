@@ -40,7 +40,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           itemCount: widget.items.length,
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 14.0),
               child: _BottomNavBarButton(
                 isSelected: _index == index,
                 barItem: widget.items[index],

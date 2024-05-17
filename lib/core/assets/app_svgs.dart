@@ -5,5 +5,6 @@ abstract final class AppSVGs {
   static const favorite = '$_path/favorite.svg';
   static const logo = '$_path/logo.svg';
   static const shop = '$_path/shop.svg';
-  static const profile = '$_path/profile.svg';
+  static const account = '$_path/account.svg';
+  static const add = '$_path/add.svg';
 }

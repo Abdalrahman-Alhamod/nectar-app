@@ -39,7 +39,7 @@ class _HomeViewState extends State<HomeView> {
           FindProductsView(),
           Center(child: Text('Cart')),
           Center(child: Text('Favorite')),
-          Center(child: Text('Profile')),
+          Center(child: Text('Account')),
         ],
       ),
       bottomNavigationBar: BottomNavBar(items: [
@@ -60,8 +60,8 @@ class _HomeViewState extends State<HomeView> {
           label: 'Favorite',
         ),
         BottomNavBarItem(
-          svgPicturePath: AppSVGs.profile,
-          label: 'Profile',
+          svgPicturePath: AppSVGs.account,
+          label: 'Account',
         ),
       ], pageController: _controller),
     );
