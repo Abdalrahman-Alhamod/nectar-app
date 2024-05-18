@@ -23,7 +23,11 @@ class _BeverageAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: AddButtonSVG(onPressed: () {}, size: 30),
+          child: AddButtonSVG(
+              onPressed: () {
+                showCustomBottomSheet(context, const AddItemBottomSheet());
+              },
+              size: 30),
         ),
       ],
     );
