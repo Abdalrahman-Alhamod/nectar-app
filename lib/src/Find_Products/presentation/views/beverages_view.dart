@@ -29,7 +29,7 @@ class BeveragesView extends StatelessWidget {
               beverage: BeverageEntity(
                 image: AppImages.coke,
                 name: 'Deit Coke',
-                size: '355ml',
+                volume: '355ml',
                 price: 1.99,
               ),
             ),
@@ -37,7 +37,7 @@ class BeveragesView extends StatelessWidget {
               beverage: BeverageEntity(
                 image: AppImages.sprite,
                 name: 'Sprite Can',
-                size: '325ml',
+                volume: '325ml',
                 price: 1.50,
               ),
             ),
@@ -45,7 +45,7 @@ class BeveragesView extends StatelessWidget {
               beverage: BeverageEntity(
                 image: AppImages.apple,
                 name: 'Apple & Grape Juice',
-                size: '2L',
+                volume: '2L',
                 price: 5.99,
               ),
             ),
@@ -53,7 +53,7 @@ class BeveragesView extends StatelessWidget {
               beverage: BeverageEntity(
                 image: AppImages.orange,
                 name: 'Orange Juice',
-                size: '2L',
+                volume: '2L',
                 price: 8.99,
               ),
             ),
@@ -61,7 +61,7 @@ class BeveragesView extends StatelessWidget {
               beverage: BeverageEntity(
                 image: AppImages.coca,
                 name: 'Coca Cola Can',
-                size: '325ml',
+                volume: '325ml',
                 price: 4.99,
               ),
             ),
@@ -69,7 +69,7 @@ class BeveragesView extends StatelessWidget {
               beverage: BeverageEntity(
                 image: AppImages.pepsi,
                 name: 'Pepsi Can',
-                size: '330ml',
+                volume: '330ml',
                 price: 4.99,
               ),
             ),

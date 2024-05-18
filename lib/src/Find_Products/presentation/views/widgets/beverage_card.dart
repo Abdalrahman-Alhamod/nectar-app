@@ -43,7 +43,7 @@ class BeverageCard extends StatelessWidget {
           const Spacer(
             flex: 1,
           ),
-          _VolumeText(volume: beverage.size),
+          _VolumeText(volume: beverage.volume),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
