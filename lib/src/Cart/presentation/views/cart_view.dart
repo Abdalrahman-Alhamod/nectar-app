@@ -31,6 +31,7 @@ class CartView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             child: ListView(
+              physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               children: [
                 CartItemCard(

@@ -13,21 +13,18 @@ class AppRoute {
       GoRoute(
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
-          // return const SplashView();
-          return const HomeView();
+          return  const HomeView();
         },
       ),
       GoRoute(
         path: kBeveragesView,
         builder: (BuildContext context, GoRouterState state) {
-          // return const SplashView();
           return const BeveragesView();
         },
       ),
       GoRoute(
         path: kOrderAcceptedView,
         builder: (BuildContext context, GoRouterState state) {
-          // return const SplashView();
           return const OrderAcceptedView();
         },
       ),
