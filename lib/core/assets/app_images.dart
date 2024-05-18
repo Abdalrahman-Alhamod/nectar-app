@@ -22,4 +22,5 @@ abstract final class AppImages {
   static const shopIcon = '$_path/shop-icon.png';
   static const sprite = '$_path/sprite.png';
   static const userIcon = '$_path/user-icon.png';
+  static const eggChickenRed = '$_path/egg-chicken-red.png';
 }

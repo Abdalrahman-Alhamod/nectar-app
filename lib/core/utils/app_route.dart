@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:nectar_app/src/Find_Products/presentation/views/beverages_view.dart';
@@ -17,7 +16,7 @@ class AppRoute {
           return const HomeView();
         },
       ),
-       GoRoute(
+      GoRoute(
         path: kBeveragesView,
         builder: (BuildContext context, GoRouterState state) {
           // return const SplashView();

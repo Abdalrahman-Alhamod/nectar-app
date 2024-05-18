@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:nectar_app/src/Cart/presentation/views/cart_view.dart';
 import 'package:nectar_app/src/Find_Products/presentation/views/find_products_view.dart';
 
 import '../../../../core/assets/app_svgs.dart';
@@ -37,7 +38,7 @@ class _HomeViewState extends State<HomeView> {
         children: const [
           Center(child: Text('Shop')),
           FindProductsView(),
-          Center(child: Text('Cart')),
+          CartView(),
           Center(child: Text('Favorite')),
           Center(child: Text('Account')),
         ],
