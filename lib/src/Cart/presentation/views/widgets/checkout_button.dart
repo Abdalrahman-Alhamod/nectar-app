@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:nectar_app/core/utils/app_route.dart';
 
 import '../../../../../core/themes/app_colors.dart';
 
@@ -12,7 +14,9 @@ class CheckoutButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 24, right: 24, bottom: 16),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          GoRouter.of(context).push(AppRoute.kOrderAcceptedView);
+        },
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
           foregroundColor: Colors.white,
