@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:nectar_app/core/utils/app_route.dart';
+import 'package:nectar_app/core/functions/show_bottom_sheet.dart';
+import 'package:nectar_app/src/Cart/presentation/views/widgets/checkout_bottom_sheet.dart';
 
 import '../../../../../core/themes/app_colors.dart';
 
@@ -15,7 +15,7 @@ class CheckoutButton extends StatelessWidget {
       padding: const EdgeInsets.only(left: 24, right: 24, bottom: 16),
       child: ElevatedButton(
         onPressed: () {
-          GoRouter.of(context).push(AppRoute.kOrderAcceptedView);
+          showCustomBottomSheet(context, const CheckoutBottomSheet());
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
