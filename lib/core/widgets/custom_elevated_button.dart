@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/themes/app_colors.dart';
+import '../themes/app_colors.dart';
 
-class TrackOrderButton extends StatelessWidget {
-  const TrackOrderButton({
+class CustomeElevatedButton extends StatelessWidget {
+  const CustomeElevatedButton({
     super.key,
+    required this.onPressed,
+    required this.title,
   });
-
+  final void Function() onPressed;
+  final String title;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
@@ -21,9 +24,9 @@ class TrackOrderButton extends StatelessWidget {
         ),
         minimumSize: const Size(double.infinity, 70),
       ),
-      child: const Text(
-        'Track Order',
-        style: TextStyle(
+      child: Text(
+        title,
+        style: const TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w400,
         ),

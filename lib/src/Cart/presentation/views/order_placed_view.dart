@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nectar_app/core/assets/app_svgs.dart';
+import 'package:nectar_app/core/widgets/custom_elevated_button.dart';
 import 'widgets/back_to_home_button.dart';
-import 'widgets/track_order_button.dart';
 
 class OrderAcceptedView extends StatelessWidget {
   const OrderAcceptedView({super.key});
@@ -44,7 +44,10 @@ class OrderAcceptedView extends StatelessWidget {
             const Spacer(
               flex: 1,
             ),
-            const TrackOrderButton(),
+            CustomeElevatedButton(
+              onPressed: () {},
+              title: 'Track Order',
+            ),
             const SizedBox(
               height: 8,
             ),

@@ -8,4 +8,5 @@ abstract final class AppSVGs {
   static const account = '$_path/account.svg';
   static const add = '$_path/add.svg';
   static const orderAccepted = '$_path/order-accepted.svg';
+  static const splash = '$_path/splash.svg';
 }

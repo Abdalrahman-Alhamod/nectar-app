@@ -4,12 +4,12 @@ import '../assets/app_fonts.dart';
 import 'app_colors.dart';
 
 ThemeData getLightThemeData(BuildContext context) {
-  final ColorScheme colorScheme = const ColorScheme.light().copyWith(
-    primary: AppColors.primary,
-    secondary: AppColors.primary.withAlpha(230),
-    background: Colors.white,
+  final ColorScheme colorScheme = ColorScheme.fromSeed(
+    seedColor: AppColors.primary,
   );
   return ThemeData(
+    useMaterial3: true,
+    primaryColor: AppColors.primary,
     colorScheme: colorScheme,
     fontFamily: AppFonts.poppins,
     brightness: Brightness.light,
